@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academic portfolio and curriculum vitae of Dr. Sasmita Padhy, Senior Associate Professor Gr-2, School of Computing Science and Engineering, VIT Bhopal University." />
+  <meta name="author" content="Dr. Sasmita Padhy" />
+  <meta name="theme-color" content="#0b5e55" />
+  <title>Dr. Sasmita Padhy | Academic Portfolio</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Dr. Sasmita Padhy home">
+        <span class="brand-mark" aria-hidden="true">SP</span>
+        <span class="brand-copy">
+          <strong>Dr. Sasmita Padhy</strong>
+          <small>Academic Portfolio</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#patents">Patents</a>
+        <a href="#training">Training</a>
+        <a href="#personal">Personal</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch color theme">◐</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" id="cvTitle">Curriculum Vitae</p>
+          <h1 id="heroTitle">Dr. Sasmita Padhy</h1>
+          <p class="hero-role" id="heroRole"></p>
+          <p class="hero-institution" id="heroInstitution"></p>
+          <p class="hero-objective" id="heroObjective"></p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="assets/docs/Sasmita-CV.docx" download>Download CV</a>
+            <a class="button button-secondary" href="#publications">Explore Publications</a>
+            <button class="button button-ghost" id="printButton" type="button">Print / Save PDF</button>
+          </div>
+          <div class="contact-strip" id="contactStrip" aria-label="Contact information"></div>
+        </div>
+
+        <aside class="profile-card reveal" aria-label="Profile summary">
+          <div class="portrait-wrap">
+            <img src="assets/images/profile.png" alt="Portrait of Dr. Sasmita Padhy" class="portrait" />
+          </div>
+          <div class="profile-card-body">
+            <span class="status-dot"><i aria-hidden="true"></i> Senior Associate Professor Gr-2</span>
+            <h2>Academic Profile</h2>
+            <div class="profile-tags" id="heroResearchTags"></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="container stat-grid" id="statGrid" aria-label="CV summary statistics"></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Profile</span>
+          <h2>Academic Background</h2>
+          <p>Education, career objective, specialization and the full academic record stated in the CV.</p>
+        </div>
+        <div class="two-col-layout">
+          <article class="panel reveal">
+            <h3>Career Objective</h3>
+            <p id="careerObjective"></p>
+          </article>
+          <article class="panel reveal">
+            <h3>Specialization</h3>
+            <p id="specialization"></p>
+          </article>
+        </div>
+        <div class="table-card reveal">
+          <div class="card-heading">
+            <div>
+              <span class="mini-label">Qualifications</span>
+              <h3>Education</h3>
+            </div>
+          </div>
+          <div class="table-wrap" id="educationTable"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Career</span>
+          <h2 id="experienceHeading">Academic Work Experience</h2>
+          <p>Positions and institutional service are reproduced from the submitted CV.</p>
+        </div>
+        <div class="timeline" id="experienceTimeline"></div>
+
+        <div class="subsection reveal" id="service">
+          <div class="subsection-heading">
+            <span class="mini-label">Leadership & Service</span>
+            <h3>Professional Contributions</h3>
+          </div>
+          <div class="feature-grid" id="contributionGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Academic Focus</span>
+          <h2>Research, Teaching & Technical Skills</h2>
+          <p>A consolidated view of research interests, subjects taught, software skills and supervised M.Tech dissertations.</p>
+        </div>
+
+        <div class="research-grid">
+          <article class="panel reveal">
+            <h3>Research Areas of Interest</h3>
+            <div class="tag-cloud" id="researchTags"></div>
+          </article>
+          <article class="panel reveal">
+            <h3>Software Skills</h3>
+            <ul class="clean-list" id="softwareSkills"></ul>
+          </article>
+        </div>
+
+        <article class="panel reveal">
+          <div class="card-heading">
+            <div>
+              <span class="mini-label">Teaching Portfolio</span>
+              <h3>Subjects Taught</h3>
+            </div>
+          </div>
+          <div class="subject-grid" id="subjectsGrid"></div>
+        </article>
+
+        <article class="panel reveal">
+          <div class="card-heading">
+            <div>
+              <span class="mini-label">Postgraduate Supervision</span>
+              <h3>M.Tech. Dissertations Supervised</h3>
+            </div>
+          </div>
+          <ol class="numbered-list" id="mtechList"></ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="supervision">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Mentorship</span>
+          <h2>Ph.D. Scholars Supervision</h2>
+          <p id="phdNarrative"></p>
+        </div>
+        <div class="table-card reveal">
+          <div class="table-wrap" id="phdTable"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Research Output</span>
+          <h2>Publications</h2>
+          <p>Complete journal and conference/book-chapter lists from the CV, including repeated entries exactly where they appear in the source.</p>
+        </div>
+
+        <div class="publication-toolbar reveal" aria-label="Publication controls">
+          <label class="search-box">
+            <span class="sr-only">Search publications</span>
+            <input id="publicationSearch" type="search" placeholder="Search title, author, journal, conference, year…" autocomplete="off" />
+          </label>
+          <div class="segmented-control" role="group" aria-label="Publication type">
+            <button type="button" class="segment active" data-publication-filter="all">All</button>
+            <button type="button" class="segment" data-publication-filter="journal">Journals</button>
+            <button type="button" class="segment" data-publication-filter="conference">Conferences / Chapters</button>
+          </div>
+          <select id="publicationYear" aria-label="Filter publications by year">
+            <option value="all">All years</option>
+          </select>
+        </div>
+
+        <div class="publication-summary reveal" id="publicationSummary" aria-live="polite"></div>
+        <div class="publication-list" id="publicationList"></div>
+        <div class="center-actions">
+          <button class="button button-secondary" id="publicationMore" type="button">Show all publications</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="patents">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Innovation</span>
+          <h2>Patents</h2>
+          <p>Patent titles, inventor role, application number and publication/grant status as listed in the CV.</p>
+        </div>
+        <div class="patent-grid" id="patentGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="training">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Professional Development</span>
+          <h2>Workshops & Seminars</h2>
+          <p>Complete list of seminars, workshops, FDPs, STTPs, orientation programs and training activities.</p>
+        </div>
+        <div class="activity-controls reveal">
+          <input id="activitySearch" type="search" placeholder="Filter workshops and seminars…" aria-label="Filter workshops and seminars" />
+          <span id="activityCount" class="count-pill"></span>
+        </div>
+        <div class="activity-list" id="activityList"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="memberships">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Professional Affiliations</span>
+          <h2>Memberships</h2>
+        </div>
+        <div class="membership-grid" id="membershipGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="personal">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">CV Record</span>
+          <h2>Personal Details</h2>
+          <p>Included because the supplied CV contains these details and the website was requested to reproduce the CV without omitting information.</p>
+        </div>
+        <div class="personal-layout">
+          <div class="table-card reveal">
+            <div class="table-wrap" id="personalTable"></div>
+          </div>
+          <aside class="declaration-card reveal">
+            <span class="mini-label">Declaration</span>
+            <blockquote id="declaration"></blockquote>
+            <img src="assets/images/signature.jpeg" alt="Signature of Dr. Sasmita Padhy" class="signature" />
+            <strong id="signatureLabel">Signature</strong>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <span class="section-kicker">Contact</span>
+          <h2>Academic & Professional Enquiries</h2>
+          <p id="contactInstitution"></p>
+        </div>
+        <div class="contact-actions" id="contactActions"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Dr. Sasmita Padhy</strong>
+        <p>Academic portfolio generated from the supplied curriculum vitae.</p>
+      </div>
+      <div class="footer-actions">
+        <a href="#top">Back to top ↑</a>
+        <a href="assets/docs/Sasmita-CV.docx" download>Download CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
